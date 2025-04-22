@@ -1,0 +1,17 @@
+profile = "devnet"
+
+[repl]
+# Starts a local blockchain instance that is reset after each REPL session.
+devnet_automine = true
+
+# Start REPL with the following accounts
+accounts = [
+  { name = "deployer", amount = 100000000000000 },
+  { name = "wallet_1", amount = 100000000000000 },
+  { name = "wallet_2", amount = 100000000000000 },
+]
+
+[contracts]
+liquidity-pool = { path = "contracts/liquidity-pool.clar", deploy = true }
+liquidity-token = { path = "contracts/liquidity-token.clar", deploy = true }
+rewards = { path = "contracts/rewards.clar", deploy = true }
