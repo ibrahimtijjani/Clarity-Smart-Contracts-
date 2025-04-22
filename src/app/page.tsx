@@ -117,10 +117,10 @@ export default function Home() {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="flex flex-col items-center justify-center min-h-screen p-6">
       <h1 className="text-2xl font-bold mb-4">Stacks Liquid</h1>
 
-      <div className="mb-4">
+      <div className="w-full max-w-md mb-4">
         <Label htmlFor="wallet-address">Wallet Address:</Label>
         <Input
           id="wallet-address"
@@ -131,7 +131,7 @@ export default function Home() {
         />
       </div>
 
-      <Card className="mb-4">
+      <Card className="w-full max-w-md mb-4">
         <CardHeader>
           <CardTitle>Token Balances</CardTitle>
           <CardDescription>Your STX and SIP-010 token balances.</CardDescription>
@@ -153,7 +153,7 @@ export default function Home() {
         </CardContent>
       </Card>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+      <div className="w-full max-w-3xl grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
         <Card>
           <CardHeader>
             <CardTitle>Deposit Tokens</CardTitle>
@@ -247,7 +247,7 @@ export default function Home() {
         </Card>
       </div>
 
-      <Card className="mb-4">
+      <Card className="w-full max-w-md mb-4">
         <CardHeader>
           <CardTitle>Rewards</CardTitle>
           <CardDescription>Rewards earned for providing liquidity.</CardDescription>
